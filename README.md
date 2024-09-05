@@ -12,7 +12,7 @@ This wrapper depends on the latest release of the [AprilTag library](https://git
 
 ```bash
 export ROS_DISTRO=kinetic               # Set this to your distro, e.g. kinetic or melodic
-source /opt/ros/$ROS_DISTRO/setup.zsh  # Source your ROS distro 
+source /opt/ros/$ROS_DISTRO/setup.zsh   # Source your ROS distro 
 mkdir -p ~/catkin_ws/src                # Make a new workspace 
 cd ~/catkin_ws/src                      # Navigate to the source space
 git clone https://github.com/FBOTWork/apriltag.git      # Clone Apriltag library
