@@ -8,6 +8,18 @@ This wrapper depends on the latest release of the [AprilTag library](https://git
 
 **Maintainer**: [Danylo Malyuta](mailto:danylo.malyuta@gmail.com) (NASA Jet Propulsion Laboratory, California Institute of Technology), [Wolfgang Merkt](https://github.com/wxmerkt)
 
+# Quickstart
+
+export ROS_DISTRO=kinetic               # Set this to your distro, e.g. kinetic or melodic
+source /opt/ros/$ROS_DISTRO/setup.bash  # Source your ROS distro 
+mkdir -p ~/catkin_ws/src                # Make a new workspace 
+cd ~/catkin_ws/src                      # Navigate to the source space
+git clone https://github.com/AprilRobotics/apriltag.git      # Clone Apriltag library
+git clone https://github.com/AprilRobotics/apriltag_ros.git  # Clone Apriltag ROS wrapper
+cd ~/catkin_ws                          # Navigate to the workspace
+rosdep install --from-paths src --ignore-src -r -y  # Install any missing packages
+catkin build    # Build all packages in the workspace (catkin_make_isolated will work also)
+
 ## Contributing
 
 Pull requests are welcome! Especially for the following areas:
