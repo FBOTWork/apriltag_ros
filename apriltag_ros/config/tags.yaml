@@ -45,8 +45,8 @@ standalone_tags:
     {id: 23, size: 0.032, name: Spacer},
     {id: 24, size: 0.032, name: Screwdriver},
     {id: 25, size: 0.032, name: Wrench},
-    {id: 26, size: 0.032, name: Drill},
-    {id: 27, size: 0.032, name: AllenKey}
+    {id: 26, size: 0.032, name: ROMULO},
+    {id: 28, size: 0.032, name: AllenKey}
   ]
 # ## Tag bundle definitions
 # ### Remarks
